@@ -1,0 +1,38 @@
+.section-clients {
+  text-align: center;
+
+  .section-clients__title {
+    font-weight: $basic-weight;
+    font-size: 36px;
+    line-height: 1.17;
+
+    margin-bottom: 50px;
+  }
+}
+
+.clients {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients__link {
+  transition: color 250ms $cubic-style, border 250ms $cubic-style;
+
+  width: 170px;
+  height: 92px;
+
+  color: $icon-kink-color;
+  fill: currentColor;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $icon-kink-color;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    color: $accent;
+    border: 1px solid $accent;
+  }
+}

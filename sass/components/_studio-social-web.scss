@@ -1,0 +1,35 @@
+.slogan-text {
+  color: $fon-main-color;
+  font-weight: $basic-weight;
+  font-size: $basic-font-size;
+  line-height: $basic-line-height;
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+}
+
+.studio-social-web {
+  display: flex;
+  column-gap: 10px;
+}
+
+.studio-social-web__link {
+  transition: background-color 250ms $cubic-style;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  fill: currentColor;
+
+  width: 44px;
+  height: 44px;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    background-color: $accent;
+  }
+}
