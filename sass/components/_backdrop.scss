@@ -1,5 +1,6 @@
 .backdrop {
   position: fixed;
+  z-index: 99;
   top: 0;
   left: 0;
   width: 100%;
@@ -8,11 +9,12 @@
   background-color: rgba(0, 0, 0, 0.2);
 
   opacity: 1;
-  transition: opacity 500ms $cubic-style;
+  visibility: visible;
+  transition: opacity 500ms $cubic-style, visibility 500ms $cubic-style;
 }
 
-.is-hidden {
-  visibility: visible;
+.backdrop.is-hidden {
+  visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
