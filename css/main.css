@@ -32,10 +32,6 @@ svg {
   display: block;
 }
 
-:focus-visible {
-  outline: none;
-}
-
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -489,7 +485,6 @@ svg {
 }
 .sign-up-form__email:focus {
   border: 1px solid #2196f3;
-  outline: none;
 }
 
 .sign-up-btn {
